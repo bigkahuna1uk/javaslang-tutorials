@@ -1,4 +1,4 @@
-package com.usul.training;
+package com.usul.training.javaslang;
 
 import javaslang.Tuple2;
 import javaslang.collection.Vector;

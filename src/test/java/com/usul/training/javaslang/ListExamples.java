@@ -1,4 +1,4 @@
-package com.usul.training;
+package com.usul.training.javaslang;
 
 import javaslang.collection.List;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package com.usul.training;
+package com.usul.training.javaslang;
 
 import javaslang.control.Try;
 import org.junit.Test;

@@ -1,9 +1,6 @@
-package com.usul.training;
+package com.usul.training.javaslang;
 
-import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * DivisorTest
