@@ -36,4 +36,34 @@ public class TuplesTest {
         assertThat(tuple2List.get(1)).isEqualTo(Tuple.of('b', 1L));
         assertThat(tuple2List.get(2)).isEqualTo(Tuple.of('c', 2L));
     }
+
+    @Test
+    public void mapByComponent()
+    {
+        Tuple2<Integer, Integer> tuple2 = Tuple.of(1, 2);
+        Tuple2<Integer, Integer> mapped = tuple2.map(i -> i + 1, j -> j + 1);
+
+        assertThat(mapped._1).isEqualTo(2);
+        assertThat(mapped._2).isEqualTo(3);
+    }
+
+    @Test
+    public void mapWithBiFunction()
+    {
+        Tuple2<Integer, Integer> tuple2 = Tuple.of(1, 2);
+        Tuple2<Integer, Integer> mapped = tuple2.map((i,j) -> Tuple.of(i + 1,  j + 1));
+
+        assertThat(mapped._1).isEqualTo(2);
+        assertThat(mapped._2).isEqualTo(3);
+    }
+
+    @Test
+    public void transform()
+    {
+        Tuple2<Integer, Integer> tuple2 = Tuple.of(1, 2);
+        String transform = tuple2.transform((i, j) -> i + " -> " + j);
+
+        assertThat(transform).isEqualTo("1 -> 2");
+    }
+
 }
