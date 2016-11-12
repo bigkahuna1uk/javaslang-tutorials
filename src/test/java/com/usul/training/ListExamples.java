@@ -32,9 +32,9 @@ public class ListExamples {
     @Test
     public void clear()
     {
-        List cleardList = list.clear();
+        List clearedList = list.clear();
 
-        assertThat(cleardList).isEmpty();
+        assertThat(clearedList).isEmpty();
         assertThat(list).isNotEmpty();
     }
 
