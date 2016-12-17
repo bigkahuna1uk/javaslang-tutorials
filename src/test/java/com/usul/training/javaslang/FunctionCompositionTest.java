@@ -2,7 +2,8 @@ package com.usul.training.javaslang;
 
 import javaslang.Function1;
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
@@ -18,7 +19,7 @@ public class FunctionCompositionTest {
     private Function1<Integer, Integer> plusOne;
     private Function1<Integer, Integer> multiplyBy2;
 
-    @Before
+    @BeforeEach
     public void setup()
     {
         plusOne = a -> a + 1;

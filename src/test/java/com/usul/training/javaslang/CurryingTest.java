@@ -2,8 +2,8 @@ package com.usul.training.javaslang;
 
 import javaslang.Function1;
 import javaslang.Function2;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.BDDAssertions.then;
 
@@ -17,7 +17,7 @@ public class CurryingTest {
 
     private Function2<Integer, Integer, Integer> sum;
 
-    @Before
+    @BeforeEach
     public void setup()
     {
         sum = (a, b) -> a + b;

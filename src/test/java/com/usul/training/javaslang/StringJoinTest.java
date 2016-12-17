@@ -1,7 +1,7 @@
 package com.usul.training.javaslang;
 
 import javaslang.collection.List;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 

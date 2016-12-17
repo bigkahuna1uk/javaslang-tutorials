@@ -1,6 +1,9 @@
 package com.usul.training.javaslang;
 
-import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * DivisorTest
@@ -10,11 +13,11 @@ import org.junit.Test;
  */
 public class DivisorTest {
 
-
-    @Test(expected = RuntimeException.class)
+    @DisplayName("╯°□°）╯")
+    @Test
     public void divideByZeroGivesError()
     {
-       Divisor.divide(10,0);
+        assertThrows(RuntimeException.class, () -> Divisor.divide(10,0));
     }
 
 }

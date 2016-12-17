@@ -1,22 +1,22 @@
 package com.usul.training.javaslang;
 
 import javaslang.Function0;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.BDDAssertions.then;
 
 /**
- * Memoization
+ * MemoizationTest
  *
  * @author bigkahuna
  * @since 12/11/2016
  */
-public class Memoization {
+public class MemoizationTest {
 
     private Function0<Double> memoized;
 
-    @Before
+    @BeforeEach
     public void setup()
     {
         memoized = Function0.of(Math::random).memoized();

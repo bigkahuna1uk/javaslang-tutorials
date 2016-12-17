@@ -2,7 +2,7 @@ package com.usul.training.javaslang;
 
 import javaslang.collection.SortedSet;
 import javaslang.collection.TreeSet;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
 

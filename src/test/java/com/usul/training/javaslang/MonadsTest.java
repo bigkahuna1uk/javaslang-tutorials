@@ -5,7 +5,7 @@ import javaslang.concurrent.Future;
 import javaslang.control.Either;
 import javaslang.control.Option;
 import javaslang.control.Try;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 

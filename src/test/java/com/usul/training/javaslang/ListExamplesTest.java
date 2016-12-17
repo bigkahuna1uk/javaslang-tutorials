@@ -1,22 +1,22 @@
 package com.usul.training.javaslang;
 
 import javaslang.collection.List;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * ListExamples
+ * ListExamplesTest
  *
  * @author bigkahuna
  * @since 30/10/2016
  */
-public class ListExamples {
+public class ListExamplesTest {
 
     private List<Integer> list;
 
-    @Before
+    @BeforeEach
     public void setup() {
         list = List.of(1, 2, 3);
     }

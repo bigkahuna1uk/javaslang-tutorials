@@ -3,7 +3,7 @@ package com.usul.training.javaslang;
 import javaslang.Function2;
 import javaslang.Function3;
 import javaslang.Function8;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

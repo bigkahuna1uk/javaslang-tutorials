@@ -5,8 +5,8 @@ import javaslang.collection.CharSeq;
 import javaslang.collection.List;
 import javaslang.control.Validation;
 import org.apache.commons.lang3.StringUtils;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.BDDAssertions.then;
 
@@ -20,7 +20,7 @@ public class ValidationTest {
 
     private PersonValidator personValidator;
 
-    @Before
+    @BeforeEach
     public void setup()
     {
         personValidator = new PersonValidator();

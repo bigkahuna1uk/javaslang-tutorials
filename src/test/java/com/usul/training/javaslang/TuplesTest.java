@@ -5,7 +5,7 @@ import javaslang.Tuple2;
 import javaslang.collection.List;
 import javaslang.collection.Map;
 import javaslang.control.Option;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
