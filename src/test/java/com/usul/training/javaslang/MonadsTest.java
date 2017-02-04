@@ -7,11 +7,12 @@ import javaslang.control.Option;
 import javaslang.control.Try;
 import org.junit.jupiter.api.Test;
 
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
 
-
-import java.util.concurrent.*;
-
-import static com.usul.training.javaslang.concurrent.Concurrent.*;
+import static com.usul.training.javaslang.concurrent.Concurrent.waitUntil;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static org.assertj.core.api.BDDAssertions.then;
 
