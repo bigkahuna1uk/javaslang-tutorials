@@ -91,6 +91,23 @@
         </dependency>
 
         <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-surefire-provider</artifactId>
+            <version>${dep.junit.platform.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${dep.junit.jupiter.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>${dep.junit.vintage.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.javaslang</groupId>
             <artifactId>javaslang</artifactId>
             <version>${dep.javaslang.version}</version>
