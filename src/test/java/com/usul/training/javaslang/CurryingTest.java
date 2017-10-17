@@ -35,7 +35,7 @@ public class CurryingTest {
     }
 
     @Test
-    public void curryingHald() {
+    public void curryingHalf() {
         Function2<Integer, Integer, Integer> curried2 = sum4.apply(2, 2);
 
         then(curried2.apply(3,3)).isEqualTo(10);
